@@ -3,10 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Counter from './Counter'
+import Batsman from './Batsman'
+import Shopping from './Shopping'
+import Water from './Water'
 
 function App() {
   function handleClick(){
     alert('i am clicked!!')
+  }
+  const handleClick2 = ()=>{
+    alert('Clicked 2');
+  }
+  const addNumber =(num)=>{
+    alert(num+10);
   }
   return (
     <>
@@ -18,7 +28,13 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
-          <button onClick={handleClick}>Click me</button>
+          <Batsman></Batsman>
+          <button style={{marginRight: '20px'}} onClick={handleClick}>Click me</button>
+          <button onClick={handleClick2}>Click me</button>
+          <button style={{marginLeft:'20px'}} onClick={()=> addNumber(10)}>Click me to add number</button>
+          <Counter></Counter>
+          <Shopping></Shopping>
+          <Water></Water>
         </div>
       </section>
     </>
