@@ -16,7 +16,7 @@ export default function Water() {
             }
             <h3>পানি দাও ভাই পিপাসা লাগছে</h3>
             <p>বর্তমান কত গ্লাস পানি খেলামঃ {water}</p>
-            <button onClick={drinkWater}>এক গ্লাস পানি খাও</button>
+            <button  onClick={drinkWater}>এক গ্লাস পানি খাও</button>
         </div>
     )
 }
